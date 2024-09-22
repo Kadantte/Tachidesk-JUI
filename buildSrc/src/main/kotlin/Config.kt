@@ -1,11 +1,15 @@
-import org.gradle.api.JavaVersion
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 object Config {
-    const val tachideskVersion = "v0.6.0"
-    // Match this to the Tachidesk-Server commit count
-    const val serverCode = 1049
-    const val preview = true
-    const val previewCommit = "63ea28a620cdf6a2fd376304ad4e54e850e4f981"
+    const val migrationCode = 5
 
-    val jvmTarget = JavaVersion.VERSION_15
+    // Suwayomi-Server version
+    const val tachideskVersion = "v1.0.0"
+    // Match this to the Suwayomi-Server commit count
+    const val serverCode = 1498
+    const val preview = false
+    const val previewCommit = "54df9d634a1e83143a6cacf6206b6504721b6ca8"
+
+    val desktopJvmTarget = JvmTarget.JVM_17
+    val androidJvmTarget = JvmTarget.JVM_17
 }
